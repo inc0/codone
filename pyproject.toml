@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "codone"
+authors = [
+    {name = "Michal Jastrzebski", email = "inc007@gmail.com"},
+]
+description = "Tool for codon optimization"
+readme = "README.md"
+requires-python = ">=3.10"
+keywords = ["bioinformatics", "biology", "genetics"]
+license = {text = "BSD-3-Clause"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "scikit-learn",
+    "pytest",
+    "biopython",
+]
+dynamic = ["version"]
+
+[project.scripts]
+codone = "my_package.module:function"
